@@ -1,0 +1,5 @@
+<input class="input is-primary" type="text" (input)="onUpdateServerName($event)"  [(ngModel)]="serverName">
+<!-- <input class="input is-primary" type="text" (input)="onUpdateServerName($event)"  placeholder="{{serverName}}"> -->
+<button class="button is-primary" [disabled]="!allowNewServer" (click)="getServer()">Add Server</button>
+<h1 class="title is-6"> {{serverName}} is {{serverCreationStatus}} </h1>
+<app-server></app-server>
